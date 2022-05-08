@@ -1,7 +1,40 @@
 ﻿<div class="p-4">
     <div class="container">
-        <h1>Hi {{user.firstName}}!</h1>
-        <p>You're logged in with Angular 10!!</p>
-        <p><a routerLink="/users">Manage Users</a></p>
-    </div>
+        <h1>Hi {{user.username}}!</h1>
+        
+<div *ngIf="user.username != 'k'">
+
+
+
+        <h4>Vasa narudzba:</h4>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 30%">Vas kontakt</th>
+                    <th style="width: 30%">Poruka</th>
+                    <th style="width: 30%">Username</th>
+                    <th style="width: 10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.username}}</td>
+                </tr>
+            </tbody >
+        </table>
+    
+    <br>
+    <br>
+    <p style="padding-left: auto;">Naknadno ce te dobiti povratnu obavijest o usluzi koju trazite.</p>
+ </div>
+</div>
+
+ <div *ngIf="user.username == 'k'">
+     <h2>Vi ste administrator ove stranice.</h2>
+     <h1>Dobro dosli!</h1>
+</div>
+
 </div>

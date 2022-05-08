@@ -2,7 +2,7 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
-
+import GLightbox from 'glightbox';
 import { AccountService, AlertService } from '@app/_services';
 
 @Component({ templateUrl: 'login.component.html' })
@@ -19,11 +19,18 @@ export class LoginComponent implements OnInit {
         private alertService: AlertService
     ) { }
 
+    lightbox:any; //za slike
+
     ngOnInit() {
         this.form = this.formBuilder.group({
             username: ['', Validators.required],
             password: ['', Validators.required]
         });
+
+          //lightbox settings
+           this.lightbox = GLightbox({ 
+              selector: ".glightbox"
+            });
     }
 
     // convenience getter for easy access to form fields
