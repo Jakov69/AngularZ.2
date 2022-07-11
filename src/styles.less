@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-// *{
-//     padding: 0;
-    
-// }
+
+
+
+
+
+
 
 body{
     display: block;
@@ -23,44 +25,114 @@ a { cursor: pointer }
     box-sizing: content-box;
 }
 
-.c4{
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5edee990a8696a7b8618fe6d/1592794368345-KP26O2DQ6O0SR8N0KOTN/DomMiguelPhotography6164+copy.jpg?format=2500w");
-    background-size: cover;
-    background-position: center;
+// .c5 {
+//   position: relative;
+//   flex-grow: 1;
+//   margin: auto;
+//   max-width: 1200px;
+//   max-height: 1200px;
+  
+//   display: grid;
+//   grid-template-columns: repeat(8, 1fr);
+//   grid-template-rows: repeat(4, 1fr);
+//   grid-gap: 2vmin;
+//   justify-items: center;
+//   align-items: center;
+// }
+
+// IMG {
+//   z-index: 1;
+//   grid-column: span 2;
+//   max-width: 100%;
+//   margin-bottom: -52%;
+//   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+//   transform: scale(1);
+//   transition: all .25s;
+  
+//   &:nth-child(7n + 1) {
+//     grid-column: 2 / span 2;
+//   }
+  
+//   &:hover {
+//     z-index: 2;
+//     transform: scale(2);
+//   }
+// }
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
-  .c5{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(228, 253, 253);
-    background-size: cover;
-    background-position: center;
-  }
-  .c5 img{
-    float: left; 
-    height: 50%; 
-    width: 50%;
-  }
+.column img {
+  margin-top: 12px;
+}
 
-  @media screen and (max-width: 600px) {
-    
-    //za slike
-    
-    .c5{
-      height: 200vh;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+  .c4{
+      height: 100vh;
       width: 100%;
-      background-color: rgb(228, 253, 253);
+      background-image: url("https://images.squarespace-cdn.com/content/v1/5edee990a8696a7b8618fe6d/1592794368345-KP26O2DQ6O0SR8N0KOTN/DomMiguelPhotography6164+copy.jpg?format=2500w");
       background-size: cover;
       background-position: center;
   }
 
-    .c5 img {
-      height: 25%; 
-      width: 100%;
-    }
-  }
+   .c5{
+     height: 100vh;
+     width: 100%;
+    
+   
+  
+     background-color: rgb(253, 253, 253);
+     background-size: cover;
+     background-position: center;
+   }
+   .c5 img{
+     float: left; 
+     height: 50%; 
+     width: 20%;
+   }
+
+   @media screen and (max-width: 600px) {
+    
+     //za slike
+    
+     .c5{
+       height: 100vh;
+       width: 100%;
+       background-color: rgb(228, 253, 253);
+       background-size: cover;
+       background-position: center;
+   }
+
+     .c5 img {
+       height: 25%; 
+       width: 100%;
+     }
+   }
+
+.c6{
+  height: 50vh;
+  width: 100%;
+  background-color: rgb(247, 242, 242);
+}
+
 
 .glightbox-container.inactive {
 
@@ -1202,39 +1274,94 @@ ul.topnav {
 
   }
 
-  .cardd{
-    height: 100vh;
-    width: 80%;
-    padding-left: 26%;
-    padding-top: 6%;
-  }
+.card{
+  height: 100vh;
+  width: 100%;
+  padding-left: 26%;
+  padding-top: 6%;
+}
+
+   .cardd{
+     height: 100vh;
+     width: 100%;
+    //  background-color: rgb(255, 255, 255);
+     background-image: url('https://i.pinimg.com/originals/2b/0c/aa/2b0caa4d833d2b626911da93921017b6.jpg');
+     padding-left: 26%;
+     padding-top: 6%;
+    
+   }
+
+   .card-head{
+     padding-left: 1.6%;
+   }
+
+   .card-body{
+   // height: 100vh;
+    width: 66%;
+   }
 
   .Karla{
-      font-size: 100px;
+     // font-size: 100px;
       color: rgb(136, 10, 136);
-      font-family: script;
+      
+       font-family: mistral;
       // padding-left: 16%;
       // padding-top: 0%;
   }
 
+  .Karla4{
+    font-family: mistral;
+}
+
    .Karla2{
-     font-size: 100px;
-     color: rgb(136, 10, 136);
-     font-family: script;
+     font-size: 140px;
+     height: 130px;
+     color: rgb(189, 61, 172);
+    // font-family: script;
      padding-left: 18%;
      padding-top: 0%;
    }
 
+     .Karla6{
+      font-size: 140px;
+      height: 130px;
+      color: rgb(189, 61, 172);
+      padding-left: 28%;
+      padding-top: 0%;
+   }
+
    .Karla3{
-    font-size: 140px;
-    color: rgb(136, 10, 136);
-    font-family: script;
-    padding-left: 30%;
-    padding-top: 0%;
+    font-size: 160px;
+    height: 20px;
+    color: rgb(189, 61, 172);
+   // font-family: script;
+    padding-left: 34%;
+    padding-top: -2%;
   }
 
+  @media screen and (max-width: 600px) {
+    .Karla2{
+      font-size: 100px;
+      padding-left: 8%;
+      padding-top: 0%;
+    }
+    .Karla3{
+      font-size: 140px;
+      padding-left: 30%;
+      padding-top: -2%;
+    }
+    .Karla6{
+      font-size: 100px;
+      height: 130px;
+      color: rgb(189, 61, 172);
+      padding-left: 26%;
+      padding-top: 0%;
+    }
+  }
+  
+
   .power{
-    height: 25vh;
+    height: 20vh;
     width: 100%;
     background-color: rgb(2, 2, 2);
     background-size: cover;
@@ -1249,6 +1376,13 @@ ul.topnav {
   // word-spacing: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .power2{
+    padding-left: 30%;
+    padding-top: 5%;
+  }
+}
+
 .span.b {
   display: inline-block;
   width: 100px;
@@ -1257,4 +1391,6 @@ ul.topnav {
   border: 1px solid blue;    
   background-color: yellow; 
 }
+
+
 
